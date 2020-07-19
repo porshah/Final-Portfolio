@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/plant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60%;
+    width: 400px;
+    height: 600px;
+    margin: 2em;
+    margin-right: 300px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    /* background-color: whitesmoke;
+    opacity: 0.9; */
+    /* border: 2px solid white;
+    border-radius: 50%; */
+}
+
+
+
+.column {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: solid red 2px; */
+    padding: 3em;
+    margin: 2em;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2em;
+}
+
+.box1 {
+    /* border: blue solid 2px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7em;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+.box2 {
+    /* border: green solid 2px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7em;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+
+
+.box3 {
+    /* border: purple solid 2px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7em;
+    width: 50%;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+.box4 {
+    /* border: orange solid 2px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7em;
+    width: 50%;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+ul {
+    display: inline;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 30px;
+    margin: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    background-color: white;
+}
+
+h1 {
+    background-color: whitesmoke;
+    opacity: 0.9;
+    border: 3px solid white;
+    border-radius: 40px;
+    padding: 10px
+}
+
+p {
+    background-color: whitesmoke;
+    opacity: 0.9;
+    /* border: 3px solid white; */
+    /* border-radius: 40px; */
+    padding: 10px
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 55px;
+    font-weight: 200;
+    line-height: 200%;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+button {
+    background-color:black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.button:hover {opacity: 0.6}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    /* .select-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+} */
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .header {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    a {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .box3 {
+        width: 100%;
+    }
+
+    .box4 {
+        width: 100%;
+    }
+
+    .fa-linkedin {
+        color: #007bb5;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        padding: 5px;
+    }
+    
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: white;
+        text-align: center;
+    }
+
+    .parallax {
+        background-image: url(./images/shadowleaf.jpg);
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }

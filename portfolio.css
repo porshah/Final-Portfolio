@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/singleplant.jpg);
+    background-size: 100%;
+    /* background-repeat: round; */
+    padding: 15px;
+    margin: 30px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.gallery {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 350px;
+}
+
+.gallery img {
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* margin: 5px; pushed items to the left*/ 
+}
+
+ul {
+    display: inline;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 30px;
+    margin: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    background: white;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+    cursor: pointer;
+    background-color: white;
+}
+
+.fa-linkedin {
+    color: #007bb5;
+    /* size: 100em; */
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    padding: 5px;
+}
+
+/* i {
+    display: flex;
+    flex-direction: row;
+} */
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        padding: 2px;
+        margin: 1em;
+    }
+
+    ul {
+        display: inline;
+        font-size: small;
+        padding: 10px;
+        margin: 30px;
+        /* width: 100%; */
+    }
+
+    .gallery {
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        /* height: 100%; */
+        /* width: 100%; */
+    }
+}
+
+@media only screen and (max-width:500px) {
+    /* For Phones */
+    body {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    ul {
+        padding: 2px;
+        margin: 2px;
+    }
+
+    img {
+    }
+}
